@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flight Confirmation</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      background: #ffffff;
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-weight: 600;
+      color: #34495e;
+    }
+
+    .value {
+      margin-left: 10px;
+      color: #2d3436;
+    }
+
+    .confirmed {
+      background-color: #dff9fb;
+      padding: 12px;
+      border-left: 5px solid #27ae60;
+      border-radius: 6px;
+      margin-top: 20px;
+      color: #2ecc71;
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>🛫 Flight Confirmation</h1>
+
+  <div class="section"><span class="label">Passenger:</span><span class="value">Bella Tezzy</span></div>
+  <div class="section"><span class="label">Date:</span><span class="value">June 30, 2025</span></div>
+  <div class="section"><span class="label">Departure Time:</span><span class="value">10:30 AM</span></div>
+  <div class="section"><span class="label">Departure Airport:</span><span class="value">Hartsfield–Jackson Atlanta Intl (ATL)</span></div>
+  <div class="section"><span class="label">Arrival Airport:</span><span class="value">Philadelphia Intl (PHL)</span></div>
+  <div class="section"><span class="label">Flight Duration:</span><span class="value">2 h 10 m</span></div>
+  <div class="section"><span class="label">Aircraft:</span><span class="value">Bombardier Challenger 350</span></div>
+  <div class="section"><span class="label">Cabin Specs:</span><span class="value">Height 6.1 ft, Speed 870 km/h, Seats up to 9</span></div>
+
+  <div class="confirmed">✅ Confirmed – A copy has been sent to WhatsApp</div>
+</div>
+
+</body>
+</html>
